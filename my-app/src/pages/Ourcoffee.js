@@ -14,7 +14,7 @@ export default function Ourcoffee() {
     }, [])
     return (
         <div>
-            <h1>Ourcoffee</h1>
+            <h1>Our   coffees</h1>
             {/* 
             <Link to='/ourcoffee/1'><h1>1</h1></Link>
             <Link to='/ourcoffee/2'><h1>2</h1></Link> */}
