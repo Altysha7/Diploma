@@ -15,10 +15,10 @@ export default function Ourcoffee() {
         <div>
             <h1>Our   coffees</h1>
 
-            <Link to='/ourcoffee/1'><h1>1</h1></Link>
-            <Link to='/ourcoffee/2'><h1>2</h1></Link>
+            {/* <Link to='/ourcoffee/1'><h1>1</h1></Link>
+            <Link to='/ourcoffee/2'><h1>2</h1></Link> */}
 
-            {coffee.map((cof) => <Link to={`/ourcoffee/${cof.id}`}><Unique key={cof.id} {...cof} divClassName='coffee' /></Link>)}
+            {/* {coffee.map((cof) => <Link to={`/ourcoffee/${cof.id}`}><Unique key={cof.id} {...cof} divClassName='coffee' /></Link>)} */}
 
             {coffee.map((cof) => <Link to={`/ourcoffee/${cof.id}`}><Unique key={cof.id} {...cof} divClassName='coffee' /></Link>)}
 
