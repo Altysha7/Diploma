@@ -1,5 +1,4 @@
 import React from 'react'
-import Bestsellers from '../components/Bestsellers'
 import { useState, useEffect } from 'react'
 import Unique from '../components/Unique'
 
@@ -15,7 +14,6 @@ export default function Main() {
 
     return (
         <div>
-            {bestsellers.map((best) => <Bestsellers key={best.name} {...best} />)}
             {bestsellers.map((best) => <Unique key={best.name} divClassName='best' {...best} />)}
         </div>
     )

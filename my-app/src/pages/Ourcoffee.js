@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import Coffee from '../components/Coffee'
 import Unique from '../components/Unique'
 
 
@@ -15,12 +14,14 @@ export default function Ourcoffee() {
     return (
         <div>
             <h1>Our   coffees</h1>
-            {/* 
-            <Link to='/ourcoffee/1'><h1>1</h1></Link>
-            <Link to='/ourcoffee/2'><h1>2</h1></Link> */}
 
-            {coffee.map((cof) => <Coffee key={cof.id} {...cof} />)}
-            {coffee.map((cof) => <Unique key={cof.id} {...cof} divClassName='coffee' />)}
+            <Link to='/ourcoffee/1'><h1>1</h1></Link>
+            <Link to='/ourcoffee/2'><h1>2</h1></Link>
+
+            {coffee.map((cof) => <Link to={`/ourcoffee/${cof.id}`}><Unique key={cof.id} {...cof} divClassName='coffee' /></Link>)}
+
+            {coffee.map((cof) => <Link to={`/ourcoffee/${cof.id}`}><Unique key={cof.id} {...cof} divClassName='coffee' /></Link>)}
+
 
         </div>
     )
